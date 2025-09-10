@@ -1,60 +1,45 @@
 "use client";
-import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
-import { cn } from "@/lib/utils";
-
-export function NavbarDemo() {
+import React from "react";
+import { FloatingNav } from "./ui/floating-navbar";
+import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+export function NavDemo() {
+  const navItems = [
+    {
+      name: "Home",
+      link: "/",
+      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "About",
+      link: "#about",
+      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Contact",
+      link: "#contact",
+      icon: (
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
+    },
+    {
+      name: "Projects",
+      link: "#projects",
+      icon: (
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
+    },
+    {
+      name: "Skills",
+      link: "#skills",
+      icon: (
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
+    },
+  ];
   return (
-    <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-2" />
-      <p className="text-black dark:text-white">
-        
-      </p>
+    <div className="relative w-full">
+      <FloatingNav navItems={navItems} className="py-5 pr-7" />
     </div>
   );
 }
 
-function Navbar({ className }: { className?: string }) {
-  const [active, setActive] = useState<string | null>(null);
-  return (
-    <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
-    >
-      <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Home">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            
-          </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="About">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-            <ProductItem
-              title="Algochurn"
-              href="https://algochurn.com"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
-              description="Prepare for tech interviews like never before."
-            />
-            <ProductItem
-              title="Tailwind Master Kit"
-              href="https://tailwindmasterkit.com"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-              description="Production ready Tailwind css components for your next project"
-            />
-            
-          </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Contact Me">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-          </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Projects">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Contact Me</HoveredLink>
-          </div>
-        </MenuItem>
-      </Menu>
-    </div>
-  );
-}

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Italianno } from "next/font/google";
 import "./globals.css";
-import { NavbarDemo } from "@/components/Navbar";
+import {NavDemo} from '@/components/Navbar';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +34,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${italianno.className}antialiased`}
       >
         <div className="relative w-full flex items-center justify-center">
-          <NavbarDemo/>
+          <NavDemo/>
         </div>
         {children}
       </body>
