@@ -134,7 +134,7 @@ export function Projects() {
                 <PinContainer
                     title="Medicare"
                     href="https://github.com/Amit1198911/Medicare"
-                    className="w-85 h-125 sm:h-120 sm:w-140"
+                    className="w-75 h-125 sm:h-120 sm:w-140"
                 >
                     <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full gap-y-5">
                         <div className="w-full">
@@ -158,7 +158,7 @@ export function Projects() {
                 <PinContainer
                     title="TenantNotes"
                     href="https://tenant-notes-c8lf.vercel.app/login"
-                    className="w-85 h-125 sm:h-120 sm:w-140"
+                    className="w-75 h-125 sm:h-120 sm:w-140"
                 >
                     <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full sm:gap-y-3 gap-y-1">
                         <div className="w-full">
@@ -180,7 +180,7 @@ export function Projects() {
                 <PinContainer
                     title="AstroMeet"
                     href="https://github.com/Amit1198911/AstroMeet"
-                    className="w-85 h-125 sm:h-120 sm:w-140"
+                    className="w-75 h-125 sm:h-120 sm:w-140"
                 >
                     <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full sm:gap-y-3 gap-y-1">
                         <div className="w-full">
@@ -202,7 +202,7 @@ export function Projects() {
                 <PinContainer
                     title="Wellnest"
                     href="https://wellnest-zeta.vercel.app/"
-                    className="w-85 h-125 sm:h-120 sm:w-140 gap-y-2"
+                    className="w-75 h-125 sm:h-120 sm:w-140 gap-y-2"
                 >
                     <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full sm:gap-y-3 gap-y-1">
                         <div className="w-full ">
