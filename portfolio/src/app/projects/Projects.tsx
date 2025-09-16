@@ -3,6 +3,8 @@ import React from "react";
 import { PinContainer } from "../../components/ui/3d-pin";
 import { Avatar } from "../../components/Avatar";
 import Profile from "../../../public/assets/Profile.png";
+import tenant from "../../../public/assets/tenant.png";
+import Wellnest from "../../../public/assets/wellnest.png";
 import { Boxes } from "@/components/ui/background-boxes";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 
@@ -34,27 +36,33 @@ export function Projects() {
             image: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
         },
     ];
-    const ecommerce = [
-        {
-            id: 1,
-            name: "John Doe",
-            designation: "Software Engineer",
-            image: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
-        },
+    const tenantNotes = [
         {
             id: 5,
             name: "Tyler Durden",
             designation: "Soap Developer",
-            image: "https://logo.svgcdn.com/d/tailwindcss-original.png",
+            image: "https://images.seeklogo.com/logo-png/32/1/next-js-logo-png_seeklogo-321806.png",
         },
         {
             id: 2,
             name: "Robert Johnson",
             designation: "Product Manager",
-            image: "https://logo.svgcdn.com/l/react-router.png",
+            image: "https://logo.svgcdn.com/d/typescript-original.png",
         },
-       
-        
+        {
+            id: 1,
+            name: "John Doe",
+            designation: "Software Engineer",
+            image: "https://images.seeklogo.com/logo-png/51/1/shadcn-ui-logo-png_seeklogo-519786.png",
+        },
+        {
+            id: 4,
+            name: "Emily Davis",
+            designation: "UX Designer",
+            image: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
+        },
+
+
     ];
     const astromeet = [
         {
@@ -129,8 +137,8 @@ export function Projects() {
                     className="w-100 h-120 sm:h-120 sm:w-140"
                 >
                     <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full gap-y-5">
-                        <div className="w-full bg-amber-500">
-                            <img src={Profile.src} alt="Image" className="w-full h-80" />
+                        <div className="w-full">
+                            <img src={`https://cdn.worldvectorlogo.com/logos/react-2.svg`} alt="Image" className="w-full h-80" />
                         </div>
                         <h3 className="max-w-xs  font-bold  text-base text-slate-100">
                             Medicare
@@ -148,24 +156,24 @@ export function Projects() {
                     </div>
                 </PinContainer>
                 <PinContainer
-                    title="Ecommerce Website"
-                    href="https://github.com/Amit1198911/Old-Css/tree/main/Tailwind%20CSS/Dashboard"
+                    title="TenantNotes"
+                    href="https://tenant-notes-c8lf.vercel.app/login"
                     className="w-100 h-120 sm:h-120 sm:w-140"
                 >
-                    <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full gap-y-3">
-                        <div className="w-full bg-amber-500">
-                            <img src={Profile.src} alt="Image" className="w-full h-80" />
+                    <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full sm:gap-y-3 gap-y-1">
+                        <div className="w-full">
+                            <img src={`https://images.seeklogo.com/logo-png/32/1/next-js-logo-png_seeklogo-321806.png`} alt="Image" className="w-full h-80" />
                         </div>
                         <h3 className="max-w-xs  font-bold  text-base text-slate-100">
-                            Ecommerce Website
+                            TenantNotes
                         </h3>
                         <div className="text-base m-0 pt-0 font-sm sm:font-normal">
                             <span className="text-slate-500 ">
-                                Developed a responsive ECommerce frontend with product display, filtering, and seamless navigation.
+                                TenantNotes is a multi-tenant SaaS app for secure, isolated note management with role-based access and subscription control.
                             </span>
                         </div>
                         <div className="flex flex-row mb-10 w-full">
-                            <AnimatedTooltip items={ecommerce} />
+                            <AnimatedTooltip items={tenantNotes} />
                         </div>
                     </div>
                 </PinContainer>
@@ -174,9 +182,9 @@ export function Projects() {
                     href="https://github.com/Amit1198911/AstroMeet"
                     className="w-100 h-120 sm:h-120 sm:w-140"
                 >
-                    <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full gap-y-3">
-                        <div className="w-full bg-amber-500">
-                            <img src={Profile.src} alt="Image" className="w-full h-80" />
+                    <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full sm:gap-y-3 gap-y-1">
+                        <div className="w-full">
+                            <img src={`https://logo.svgcdn.com/l/redis.png`} alt="Image" className="w-full h-80" />
                         </div>
                         <h3 className="max-w-xs  font-bold  text-base text-slate-100">
                             AstroMeet
@@ -196,9 +204,9 @@ export function Projects() {
                     href="https://wellnest-zeta.vercel.app/"
                     className="w-100 h-120 sm:h-120 sm:w-140 gap-y-2"
                 >
-                    <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full gap-y-3">
-                        <div className="w-full bg-amber-500">
-                            <img src={Profile.src} alt="Image" className="w-full h-80" />
+                    <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full sm:gap-y-3 gap-y-1">
+                        <div className="w-full ">
+                            <img src={`https://cdn.worldvectorlogo.com/logos/react-2.svg`}  alt="Image" className="w-full h-80" />
                         </div>
                         <h3 className="max-w-xs  font-bold  text-base text-slate-100">
                             Wellnest

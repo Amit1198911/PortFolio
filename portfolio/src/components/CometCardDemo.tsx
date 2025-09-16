@@ -2,7 +2,7 @@ import { CometCard } from "@/components/ui/comet-card";
 import Profile from '../../public/assets/Profile.png'
 
 export function CometCardDemo() {
-    const Prof = Profile;
+    
   return (
     <CometCard>
       <button

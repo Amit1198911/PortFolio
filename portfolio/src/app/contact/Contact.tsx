@@ -5,7 +5,6 @@ import { BsTwitterX } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { GrLinkedin } from "react-icons/gr";
 import Link from "next/link";
-import { Boxes } from "@/components/ui/background-boxes";
 
 export function ContactUs() {
   return (
